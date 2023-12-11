@@ -14,7 +14,7 @@ class ApiError extends Error {
          this.errors = errors
 
          //statck tray to fild bugs in to that file
-         if(statck){
+         if(stack){
             this.stack = statck
          }else{
             Error.captureStackTrace(this, this.contructor)
