@@ -8,7 +8,7 @@ import multer from "multer"
 
      cb(null, file.originalname);
    },
- });
+ }); 
 
  export const upload = multer({ storage});
 

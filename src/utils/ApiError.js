@@ -4,7 +4,7 @@ class ApiError extends Error {
         statusCode,
         message = "Something went Wrong",
         errors = [],
-        statck = ""
+        stack = ""
     ){
          super(message)
          this.statusCode = statusCode
@@ -15,7 +15,7 @@ class ApiError extends Error {
 
          //statck tray to fild bugs in to that file
          if(stack){
-            this.stack = statck
+            this.stack = stack
          }else{
             Error.captureStackTrace(this, this.contructor)
          }

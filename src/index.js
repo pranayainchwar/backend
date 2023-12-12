@@ -1,5 +1,6 @@
 //require('dotenv').config({path:'./env'})  
 // we are not using this as it distub the consistency of code we use another approch 
+import express from "express";
 import dotenv from "dotenv"
 import connectDB from "./db/index.js"; // here we got error when we not use .js
 
